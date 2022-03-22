@@ -12,9 +12,24 @@ function entradaNome() {
     
 }else{
     alert("Digite apenas letras!");
-    entradaNome();
-    
+    entradaNome();    
 }
+
+novoNome();
+
+function novoNome(){
+    opcao = Number(prompt('Quer exibir um novo nome?\n1 - Sim\n2 - Não'));
+
+    if(opcao == 1){
+        entradaNome();
+    }else if(opcao == 2){
+        alert('Obrigado! Até a próxima.🙋‍♂️');
+    }else{
+        alert('Opção inválida!');
+        novoNome();
+    }
+}
+
 }
 
 entradaNome();
