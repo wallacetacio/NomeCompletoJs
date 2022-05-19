@@ -1,6 +1,6 @@
 function entradaNome() {
-    let primeiroNome = prompt('Digite seu primeiro nome:');
-    let segundoNome = prompt('Digite seu segundo nome:');
+    let primeiroNome = prompt('Digite seu primeiro nome:').trim();
+    let segundoNome = prompt('Digite seu segundo nome:').trim();
 
     if (isNaN(primeiroNome) || isNaN(segundoNome)){
     primeiroNome = primeiroNome[0].toUpperCase() + primeiroNome.substring(1);
